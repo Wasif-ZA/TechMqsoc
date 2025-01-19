@@ -88,8 +88,8 @@ const JobDescription: React.FC<JobDescriptionProps> = ({
         <aside className="md:col-span-1 flex-shrink-0 sticky top-16">
         <div className="border rounded-lg p-6 shadow-md space-y-6">
             {/* "All roles" heading with animated arrow */}
-            <Link href="./careers" passHref>
-              <div className="text-xl font-semibold flex items-center space-x-2 group hover:text-indigo-500 cursor-pointer">
+            <Link href="./careers">
+              <div className="text-xl font-semibold flex items-center space-x-2 group :text-indigo-500 cursor-pointer">
                 <HiOutlineArrowLeft
                   className="text-indigo-500 w-5 h-5 transition-transform duration-200 group-hover:-translate-x-1"
                 />

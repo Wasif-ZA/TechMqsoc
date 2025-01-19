@@ -12,6 +12,15 @@ interface BenefitsSectionProps {
   className?: string;
 }
 
+/**
+ * BenefitsSection component renders a section displaying a list of benefits.
+ *
+ * @param {BenefitsSectionProps} props - The properties for the BenefitsSection component.
+ * @param {Array<{ title: string, description: string }>} props.benefits - An array of benefit objects, each containing a title and description.
+ * @param {string} [props.className] - Optional additional class names to apply to the container div.
+ *
+ * @returns {JSX.Element} The rendered BenefitsSection component.
+ */
 const BenefitsSection: React.FC<BenefitsSectionProps> = ({ benefits, className = "" }) => {
   return (
     <div className={`min-h-screen bg-gray-50 py-16 px-8 font-roboto ${className}`}>
